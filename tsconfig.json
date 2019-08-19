@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react",
+    "strict": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+  },
+  "include": [
+    "./src/*",
+    "./src/index.tsx"
+  ],
+  "exclude": [
+    "./node_modules/webpack-concat-plugin/*",
+    "node_modules"
+  ]
+}
+//https://www.logicbig.com/tutorials/misc/typescript/ts-config-json.html
