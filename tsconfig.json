@@ -1,22 +1,18 @@
 {
-  "compilerOptions": {
-    "outDir": "./dist",
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "es6",
-    "jsx": "react",
-    "strict": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-  },
-  "include": [
-    "./src/*",
-    "./src/index.tsx"
-  ],
-  "exclude": [
-    "./node_modules/webpack-concat-plugin/*",
-    "node_modules"
-  ]
-}
-//https://www.logicbig.com/tutorials/misc/typescript/ts-config-json.html
+    "compilerOptions": {
+      "outDir": "./src",
+      "sourceMap": true,
+      "noImplicitAny": false,
+      "module": "commonjs",
+      "target": "es6",
+      "jsx": "react",
+      "strict": false
+    },
+    "include": [
+      "./app/*", "./app/index.tsx"
+    ],
+    "exclude": [
+      "./node_modules/webpack-concat-plugin/*"
+    ]
+  }
+  //https://www.logicbig.com/tutorials/misc/typescript/ts-config-json.html

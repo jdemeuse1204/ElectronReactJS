@@ -1,0 +1,8 @@
+{
+    "bindings": [
+        {
+            "command": "test",
+            "test": 1
+        }
+    ]
+}
