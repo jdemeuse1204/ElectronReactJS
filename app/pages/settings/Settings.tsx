@@ -2,7 +2,8 @@
 import * as React from 'react';
 import './Settings.css';
 import { AppContext } from '../../AppStateProvider';
-const { globalShortcut } = (window as any).require('electron').remote;
+import { getKeybindings } from '../../data/settingsRepository';
+import { BrowserWindow as WebBrowserWindow } from 'electron';
 
 export class Settings extends React.Component {
 
@@ -12,28 +13,30 @@ export class Settings extends React.Component {
 
     // Define our context
     context!: IReactContext<IAppState>;
+    pandora: WebBrowserWindow;
 
-    constructor(props:any, context:IReactContext<IAppState>) {
+    constructor(props: any, context: IReactContext<IAppState>) {
         super(props);
         this.context = context;
 
-        fetch('keybinds.json').then(response => {
-            return response.text();
-        }).then(data => {
-            // Work with JSON data here
-            alert(data)
-        }).catch(err => {
-            // Do something for an error here
-            alert(err);
-        })
+        getKeybindings().then(data => {
+            this.context.set({
+                settings: {
+                    keybindings: data
+                }
+            });
+        });
     }
 
     render(): React.ReactNode {
         return (
             <div id="home-page-container">
-                <h1>Home Page</h1>
-                <a href="#/test">Go To Test Page</a>
-                <p>State Id Value: {this.context.state.Id}</p>
+                <a href="#/">Back</a>
+                <div>
+                    {
+                        this.context.state.settings.keybindings.map(w => <span>{w.name}</span>)
+                    }
+                </div>
             </div>
         );
     }

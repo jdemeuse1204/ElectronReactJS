@@ -4,8 +4,15 @@ const React = require("react");
 const StateProvider_1 = require("./common/context/StateProvider");
 const defaultContext = {
     state: {
-        Id: "Id",
-        Name: ""
+        settings: {
+            keybindings: []
+        },
+        waiting: {
+            isWaiting: true,
+            message: "",
+            showMessage: false,
+            isThinking: false
+        }
     },
     set: StateProvider_1.update
 };

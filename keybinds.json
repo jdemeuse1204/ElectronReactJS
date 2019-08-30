@@ -1,8 +1,15 @@
-{
-    "bindings": [
-        {
-            "command": "test",
-            "test": 1
+[
+    {
+        "name":"Pandora",
+        "sequence": "Control+Alt+P",
+        "type":"loadurl",
+        "data": {
+            "url": "https://www.pandora.com"
         }
-    ]
-}
+    },
+    {
+        "name":"Play/Pause",
+        "sequence": "Control+Alt+Space",
+        "type":"keycommand"
+    }
+]

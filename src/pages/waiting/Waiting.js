@@ -3,35 +3,30 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
 require("./Waiting.css");
 const AppStateProvider_1 = require("../../AppStateProvider");
-const $ = require("jquery");
-const { globalShortcut } = window.require('electron').remote;
+const { globalShortcut, BrowserWindow } = window.require('electron').remote;
 class Waiting extends React.Component {
     constructor(props, context) {
         super(props);
         this.context = context;
         globalShortcut.register('Control+Alt+Space', () => {
-            alert($);
-            // mainWindow.webContents.sendInputEvent({ keyCode: 'Space', type: 'keyDown' });
-            // mainWindow.webContents.sendInputEvent({ keyCode: 'Space', type: 'char' });
-            // mainWindow.webContents.sendInputEvent({ keyCode: 'Space', type: 'keyUp' });
         });
-        fetch('keybinds.json').then(response => {
-            return response.text();
-        }).then(data => {
-            // Work with JSON data here
-            alert(data);
-        }).catch(err => {
-            // Do something for an error here
-            alert(err);
+        globalShortcut.register('Control+Alt+P', () => {
+            debugger;
+            if (!this.pandora) {
+                this.pandora = new BrowserWindow({ width: 600, height: 800, webPreferences: { nodeIntegration: true } });
+                this.pandora.on('closed', () => {
+                    this.pandora = null;
+                });
+            }
+            this.pandora.loadURL("https://www.pandora.com/");
         });
     }
     render() {
         return (React.createElement("div", { id: "home-page-container" },
-            React.createElement("h1", null, "Home Page 1"),
-            React.createElement("a", { href: "#/test" }, "Go To Test Page"),
-            React.createElement("p", null,
-                "State Id Value: ",
-                this.context.state.Id)));
+            React.createElement("a", { className: "settings", href: "#/Settings" }),
+            React.createElement("div", { className: "message", style: { display: this.context.state.waiting.showMessage === true ? "" : "none" } }),
+            React.createElement("span", { className: "thinking", style: { display: this.context.state.waiting.isThinking === true ? "" : "none" } }),
+            React.createElement("span", { className: "marquee", style: { display: this.context.state.waiting.isWaiting === true ? "" : "none" } })));
     }
 }
 // React will assign context for you if we supply the type

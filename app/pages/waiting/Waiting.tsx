@@ -1,8 +1,10 @@
 import * as React from 'react';
 import './Waiting.css';
 import { AppContext } from '../../AppStateProvider';
+import { BrowserWindow as WebBrowserWindow } from 'electron';
+const { globalShortcut, BrowserWindow } = (window as any).require('electron').remote;
 import * as $ from 'jquery';
-const { globalShortcut } = (window as any).require('electron').remote;
+
 
 export class Waiting extends React.Component {
 
@@ -12,25 +14,39 @@ export class Waiting extends React.Component {
 
     // Define our context
     context!: IReactContext<IAppState>;
+    pandora: WebBrowserWindow;
 
     constructor(props: any, context: IReactContext<IAppState>) {
         super(props);
         this.context = context;
 
         globalShortcut.register('Control+Alt+Space', () => {
-            alert($);
-            // mainWindow.webContents.sendInputEvent({ keyCode: 'Space', type: 'keyDown' });
-            // mainWindow.webContents.sendInputEvent({ keyCode: 'Space', type: 'char' });
-            // mainWindow.webContents.sendInputEvent({ keyCode: 'Space', type: 'keyUp' });
+
+    
+        });
+    
+        globalShortcut.register('Control+Alt+P', () => {
+            debugger;
+    
+            if (!this.pandora) {
+                this.pandora = new BrowserWindow({ width: 600, height: 800, webPreferences: { nodeIntegration: true } });
+    
+                this.pandora.on('closed', () => {
+                    this.pandora = null;
+                });
+            
+            }
+            this.pandora.loadURL("https://www.pandora.com/");
         });
     }
 
     render(): React.ReactNode {
         return (
             <div id="home-page-container">
-                <h1>Home Page 1</h1>
-                <a href="#/test">Go To Test Page</a>
-                <p>State Id Value: {this.context.state.Id}</p>
+                <a className="settings" href="#/Settings"></a>
+                <div className="message" style={{ display: this.context.state.waiting.showMessage === true ? "" : "none" }}></div>
+                <span className="thinking" style={{ display: this.context.state.waiting.isThinking === true ? "" : "none" }}></span>
+                <span className="marquee" style={{ display: this.context.state.waiting.isWaiting === true ? "" : "none" }}></span>
             </div>
         );
     }

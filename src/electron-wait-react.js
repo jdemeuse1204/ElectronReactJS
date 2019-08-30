@@ -13,7 +13,12 @@ const tryConnection = () => client.connect({port: port}, () => {
             startedElectron = true;
             const exec = require('child_process').exec;
             const electron = exec('npm run electron');
-            electron.stdout.on("data", function(data) {
+            electron.stdout.on("electron data", function(data) {
+                console.log("stdout: " + data.toString());
+            });
+
+            const tsc = exec('npm run tsc:watch');
+            tsc.stdout.on("tsc data", function(data) {
                 console.log("stdout: " + data.toString());
             });
         }

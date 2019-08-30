@@ -10,15 +10,23 @@ declare interface IReactContext<T> {
     set: (appState:DeepPartial<T>) => void;
 }
 
+declare interface IDataPayload {
+    url: string;
+}
+
 declare interface IKeyBinding {
+    name:string;
     sequence: string;
-    name: string;
-    type: string;
+    type: "url";
+    data: DeepPartial<IDataPayload>;
 }
 
 declare interface IAppState {
     waiting: {
-
+        showMessage: boolean;
+        message:string;
+        isWaiting: boolean;
+        isThinking: boolean;
     },
     settings: {
         keybindings: IKeyBinding[]

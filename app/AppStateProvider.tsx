@@ -7,7 +7,10 @@ const defaultContext: IReactContext<IAppState> = {
             keybindings: []
         },
         waiting: {
-            
+            isWaiting: true,
+            message: "",
+            showMessage: false,
+            isThinking: false
         }
     },
     set: update

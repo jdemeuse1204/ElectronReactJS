@@ -3,14 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "@types/electron": "^1.6.10",
     "@types/jquery": "^3.3.31",
     "@types/lodash": "^4.14.137",
     "@types/node": "^12.0.0",
     "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
     "@types/react-router-dom": "^4.3.3",
-    "electron": "^1.7.9",
+    "electron": "^6.0.2",
     "foreman": "^2.0.0",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
@@ -33,6 +32,7 @@
     "eject": "tsc && react-scripts eject",
     "electron": "electron .",
     "dev": "nf start -p 3000",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "tsc:watch": "tsc -w"
   }
 }

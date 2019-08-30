@@ -4,7 +4,8 @@
  */
 import * as React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-import { Waiting } from './pages/waiting/Waiting'
+import { Waiting } from './pages/waiting/Waiting';
+import { Settings } from './pages/settings/Settings';
 import { AppStateProvider } from './AppStateProvider';
 
 export class App extends React.Component {
@@ -15,6 +16,7 @@ export class App extends React.Component {
                 <Router>
                     <Switch>
                         <Route exact path="/" component={Waiting} />
+                        <Route exact path="/Settings" component={Settings} />
                     </Switch>
                 </Router>
             </AppStateProvider >

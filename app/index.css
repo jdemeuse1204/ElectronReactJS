@@ -1,3 +1,11 @@
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
 @-webkit-keyframes scroll-left {
     from {
         left: -150px;
@@ -42,7 +50,7 @@
     height: 5px;
     width: 150px;
     top: 600px;
-    background-image: url('../../../static/inactive-line.png');
+    background-image: url('../../../public/inactive-line.png');
     position: absolute;
     -webkit-animation: scroll-left 4s linear infinite; 
     -moz-animation:    scroll-left 4s linear infinite; 
@@ -52,7 +60,7 @@
 
 #home-page-container .settings {
     position: absolute;
-    background-image: url('../../../static/11057128611554892217.svg');
+    background-image: url('../../../public/11057128611554892217.svg');
     height: 32px;
     width: 32px;
     cursor: pointer;
@@ -70,5 +78,5 @@
     left: calc(50% - 100px);
     height: 200px;
     width: 200px;
-    background-image: url('../../../static/Ripple-2.2s-200px.gif');
+    background-image: url('../../../public/Ripple-2.2s-200px.gif');
 }
