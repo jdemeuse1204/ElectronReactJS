@@ -1,0 +1,24 @@
+html, body, #root { height: 100%; }
+body { overflow-x: hidden; }
+
+
+#root { 
+    position: relative;
+}
+
+#now-playing { 
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    display: inline-block;
+    position: absolute;
+ }
+
+.scroll-6s {
+    -webkit-animation: scroll-right 5s linear; 
+    -moz-animation:    scroll-right 5s linear; 
+    -o-animation:      scroll-right 5s linear; 
+    animation:         scroll-right 5s linear; 
+}

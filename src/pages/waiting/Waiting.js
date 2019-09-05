@@ -3,22 +3,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
 require("./Waiting.css");
 const AppStateProvider_1 = require("../../AppStateProvider");
-const { globalShortcut, BrowserWindow } = window.require('electron').remote;
+const register_1 = require("../../common/keybindings/register");
+const settingsRepository_1 = require("../../data/settingsRepository");
 class Waiting extends React.Component {
     constructor(props, context) {
         super(props);
         this.context = context;
-        globalShortcut.register('Control+Alt+Space', () => {
-        });
-        globalShortcut.register('Control+Alt+P', () => {
-            debugger;
-            if (!this.pandora) {
-                this.pandora = new BrowserWindow({ width: 600, height: 800, webPreferences: { nodeIntegration: true } });
-                this.pandora.on('closed', () => {
-                    this.pandora = null;
-                });
-            }
-            this.pandora.loadURL("https://www.pandora.com/");
+        settingsRepository_1.getKeybindings().then(response => {
+            register_1.register(response);
         });
     }
     render() {

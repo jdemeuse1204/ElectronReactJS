@@ -8,7 +8,9 @@ import { Waiting } from './pages/waiting/Waiting';
 import { Settings } from './pages/settings/Settings';
 import { AppStateProvider } from './AppStateProvider';
 
+
 export class App extends React.Component {
+
     render(): React.ReactNode {
 
         return (

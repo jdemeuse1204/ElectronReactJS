@@ -1,15 +1,62 @@
 [
     {
-        "name":"Pandora",
-        "sequence": "Control+Alt+P",
+        "name":"Youtube",
+        "sequence": "Control+P",
         "type":"loadurl",
         "data": {
-            "url": "https://www.pandora.com"
-        }
-    },
-    {
-        "name":"Play/Pause",
-        "sequence": "Control+Alt+Space",
-        "type":"keycommand"
+            "url": "https://www.youtube.com"
+        },
+        "commands": [
+            {
+                "name":"Play/Pause",
+                "sequence": "Control+Space",
+                "type":"browsercommand",
+                "action": {
+                    "type": "sendkey",
+                    "payload": "Space"
+                }
+            },
+            {
+                "name":"Mute",
+                "sequence": "Control+M",
+                "type":"browsercommand",
+                "action": {
+                    "type": "sendkey",
+                    "payload": "M"
+                }
+            },
+            {
+                "name":"Volume Up",
+                "sequence": "Control+Up",
+                "type":"browsercommand",
+                "action": {
+                    "type": "sendkey",
+                    "payload": "Up"
+                }
+            },
+            {
+                "name":"Volume Down",
+                "sequence": "Control+Down",
+                "type":"browsercommand",
+                "action": {
+                    "type": "sendkey",
+                    "payload": "Down"
+                }
+            },
+            {
+                "name":"Next",
+                "sequence": "Control+N",
+                "type":"browsercommand",
+                "action": {
+                    "type": "sendkey",
+                    "payload": "Shift+n"
+                }
+            },
+            {
+                "name":"Close",
+                "sequence": "Control+X",
+                "type":"closebrowser"
+            }
+        ]
     }
 ]

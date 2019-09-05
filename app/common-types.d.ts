@@ -32,3 +32,17 @@ declare interface IAppState {
         keybindings: IKeyBinding[]
     }
 }
+
+declare interface IBrowserCommand {
+    name: string;
+    sequence: string;
+    type: "browsercommand" | "closebrowser",
+    action: {
+        type: "sendkey",
+        payload: string; 
+    }
+}
+
+declare interface IKeyBindUrlLoader extends IKeyBinding {
+    commands: IBrowserCommand[]
+}
