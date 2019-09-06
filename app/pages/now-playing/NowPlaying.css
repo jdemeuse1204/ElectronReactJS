@@ -1,5 +1,5 @@
 html, body, #root { height: 100%; }
-body { overflow-x: hidden; }
+body { overflow: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
 
 #root { 
@@ -9,16 +9,18 @@ body { overflow-x: hidden; }
 #now-playing { 
     text-align: center;
     font-size: 24px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
     white-space: nowrap;
     text-overflow: ellipsis; 
     display: inline-block;
     position: absolute;
  }
 
+ #header { font-size: 16px; }
+
 .scroll-6s {
-    -webkit-animation: scroll-right 5s linear; 
-    -moz-animation:    scroll-right 5s linear; 
-    -o-animation:      scroll-right 5s linear; 
-    animation:         scroll-right 5s linear; 
+    -webkit-animation: scroll-right 4s linear; 
+    -moz-animation:    scroll-right 4s linear; 
+    -o-animation:      scroll-right 4s linear; 
+    animation:         scroll-right 4s linear; 
 }

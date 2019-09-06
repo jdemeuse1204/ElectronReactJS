@@ -36,7 +36,7 @@ declare interface IAppState {
 declare interface IBrowserCommand {
     name: string;
     sequence: string;
-    type: "browsercommand" | "closebrowser",
+    type: "browsercommand" | "closebrowser" | "showsongtitle",
     action: {
         type: "sendkey",
         payload: string; 

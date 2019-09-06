@@ -53,9 +53,9 @@
                 }
             },
             {
-                "name":"Close",
-                "sequence": "Control+X",
-                "type":"closebrowser"
+                "name":"Show Song Title",
+                "sequence": "Control+O",
+                "type":"showsongtitle"
             }
         ]
     }
