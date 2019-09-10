@@ -3,7 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const path = require("path");
 const url = require("url");
 const logging = require("../logging");
-const { globalShortcut, BrowserWindow, screen } = window.require('electron').remote;
+const ioHook = window.require('iohook');
+const { BrowserWindow, screen } = window.require('electron').remote;
 let windows = [];
 exports.getWindows = () => {
     return windows;
@@ -18,6 +19,7 @@ exports.register = (keybindings) => {
                 break;
         }
     }
+    ioHook.start();
 };
 const registerUrlKeybinding = (keybinding) => {
     registerGlobalShortcut(keybinding.sequence, () => {
@@ -48,10 +50,11 @@ const registerUrlKeybinding = (keybinding) => {
     }
 };
 const getWindow = (name) => {
-    return windows[name];
+    const item = windows.find(w => w.name == name);
+    return item == null ? null : item.window;
 };
 const setWindow = (name, window) => {
-    windows[name] = window;
+    windows.push({ name, window });
 };
 const sendBrowserCommand = (command, window) => {
     switch (command.type) {
@@ -86,11 +89,9 @@ const registerAdSkipper = (window, url) => {
     }
 };
 const registerGlobalShortcut = (sequence, callback, scope) => {
-    if (globalShortcut.isRegistered(sequence)) {
-        globalShortcut.unregister(sequence);
-    }
     callback.bind(scope);
-    globalShortcut.register(sequence, callback);
+    const parsedSequence = JSON.parse(sequence);
+    ioHook.registerShortcut(parsedSequence, callback);
 };
 const showSongPlayingMessage = (title) => {
     const display = screen.getPrimaryDisplay();

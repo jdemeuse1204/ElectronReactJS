@@ -1,7 +1,7 @@
 [
     {
         "name":"Youtube",
-        "sequence": "Control+P",
+        "sequence": "[29,25]",
         "type":"loadurl",
         "data": {
             "url": "https://www.youtube.com"
@@ -9,7 +9,7 @@
         "commands": [
             {
                 "name":"Play/Pause",
-                "sequence": "Control+Space",
+                "sequence": "[29,57]",
                 "type":"browsercommand",
                 "action": {
                     "type": "sendkey",
@@ -18,7 +18,7 @@
             },
             {
                 "name":"Mute",
-                "sequence": "Control+M",
+                "sequence": "[29,50]",
                 "type":"browsercommand",
                 "action": {
                     "type": "sendkey",
@@ -27,7 +27,7 @@
             },
             {
                 "name":"Volume Up",
-                "sequence": "Control+Up",
+                "sequence": "[29,61000]",
                 "type":"browsercommand",
                 "action": {
                     "type": "sendkey",
@@ -36,7 +36,7 @@
             },
             {
                 "name":"Volume Down",
-                "sequence": "Control+Down",
+                "sequence": "[29,61008]",
                 "type":"browsercommand",
                 "action": {
                     "type": "sendkey",
@@ -45,7 +45,7 @@
             },
             {
                 "name":"Next",
-                "sequence": "Control+N",
+                "sequence": "[29,49]",
                 "type":"browsercommand",
                 "action": {
                     "type": "sendkey",
@@ -54,7 +54,7 @@
             },
             {
                 "name":"Show Song Title",
-                "sequence": "Control+O",
+                "sequence": "[29,24]",
                 "type":"showsongtitle"
             }
         ]

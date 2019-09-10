@@ -46,3 +46,5 @@ declare interface IBrowserCommand {
 declare interface IKeyBindUrlLoader extends IKeyBinding {
     commands: IBrowserCommand[]
 }
+
+declare var mousetrap:any;

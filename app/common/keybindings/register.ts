@@ -3,7 +3,8 @@ import { BrowserWindow as WebBrowserWindow } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
 import * as logging from '../logging';
-const { globalShortcut, BrowserWindow, screen } = (window as any).require('electron').remote;
+const ioHook = (window as any).require('iohook');
+const { BrowserWindow, screen } = (window as any).require('electron').remote;
 
 let windows: { window: WebBrowserWindow, name: string }[] = []
 
@@ -25,14 +26,15 @@ export const register = (keybindings: IKeyBinding[]) => {
 
         }
     }
+
+    ioHook.start();
 }
 
 const registerUrlKeybinding = (keybinding: IKeyBindUrlLoader) => {
 
     registerGlobalShortcut(keybinding.sequence, () => {
-
+        
         logging.info(`Main Shortcut Processed - Key Binding: ${keybinding.name}, Sequence: ${keybinding.sequence}`);
-
 
         let window = getWindow(keybinding.name);
         if (!window) {
@@ -63,7 +65,6 @@ const registerUrlKeybinding = (keybinding: IKeyBindUrlLoader) => {
         logging.info(`Key Binding: ${keybinding.name}, Command Name: ${command.name}, Command Sequence: ${command.sequence}`);
 
         registerGlobalShortcut(command.sequence, () => {
-
             const window = getWindow(keybinding.name);
 
             logging.info(`Child Shortcut Processed - Key Binding: ${keybinding.name}, Sequence: ${command.sequence}, Window URL: ${window.webContents.getURL()}`);
@@ -74,11 +75,12 @@ const registerUrlKeybinding = (keybinding: IKeyBindUrlLoader) => {
 }
 
 const getWindow = (name: string): WebBrowserWindow => {
-    return windows[name];
+    const item = windows.find(w => w.name == name)
+    return item == null ? null : item.window;
 }
 
 const setWindow = (name: string, window: WebBrowserWindow): void => {
-    windows[name] = window;
+    windows.push({ name, window });
 }
 
 const sendBrowserCommand = (command: IBrowserCommand, window: WebBrowserWindow) => {
@@ -121,13 +123,11 @@ const registerAdSkipper = (window: WebBrowserWindow, url: string) => {
 
 const registerGlobalShortcut = (sequence: string, callback: Function, scope: any) => {
 
-    if (globalShortcut.isRegistered(sequence)) {
-        globalShortcut.unregister(sequence)
-    }
-
     callback.bind(scope);
 
-    globalShortcut.register(sequence, callback);
+    const parsedSequence = JSON.parse(sequence);
+
+    ioHook.registerShortcut(parsedSequence, callback);
 }
 
 const showSongPlayingMessage = (title: string) => {
