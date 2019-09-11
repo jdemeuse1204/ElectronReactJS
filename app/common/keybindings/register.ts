@@ -33,7 +33,7 @@ export const register = (keybindings: IKeyBinding[]) => {
 const registerUrlKeybinding = (keybinding: IKeyBindUrlLoader) => {
 
     registerGlobalShortcut(keybinding.sequence, () => {
-        
+
         logging.info(`Main Shortcut Processed - Key Binding: ${keybinding.name}, Sequence: ${keybinding.sequence}`);
 
         let window = getWindow(keybinding.name);

@@ -7,9 +7,15 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Waiting } from './pages/waiting/Waiting';
 import { Settings } from './pages/settings/Settings';
 import { AppStateProvider } from './AppStateProvider';
-
+const ioHook = (window as any).require('iohook');
 
 export class App extends React.Component {
+
+    constructor(props:any) {
+        super(props);
+
+        ioHook.unregisterAllShortcuts();
+    }
 
     render(): React.ReactNode {
 

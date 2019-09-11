@@ -38,7 +38,8 @@
     "electron": "electron .",
     "dev": "nf start -p 3000",
     "tsc": "tsc",
-    "tsc:watch": "tsc -w"
+    "tsc:watch": "tsc -w",
+    "keypress-recorder": "node ./excluded/keypress.js"
   },
   "iohook": {
     "targets": [

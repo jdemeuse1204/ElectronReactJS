@@ -307,3 +307,58 @@ INFO - Tue Sep 10 2019 16:31:48 GMT-0500 (Central Daylight Time) - Child Shortcu
 INFO - Tue Sep 10 2019 16:31:49 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,61008], Window URL: https://www.youtube.com/watch?v=50LLBCB1n4M 
 INFO - Tue Sep 10 2019 16:31:49 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,61008], Window URL: https://www.youtube.com/watch?v=50LLBCB1n4M 
 INFO - Tue Sep 10 2019 16:31:50 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,61008], Window URL: https://www.youtube.com/watch?v=50LLBCB1n4M 
+INFO - Wed Sep 11 2019 14:16:42 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Sequence: [29,56,25] 
+INFO - Wed Sep 11 2019 14:16:42 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Play/Pause, Command Sequence: [29,56,57] 
+INFO - Wed Sep 11 2019 14:16:42 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Volume Up, Command Sequence: [29,56,61000] 
+INFO - Wed Sep 11 2019 14:16:42 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Mute, Command Sequence: [29,56,50] 
+INFO - Wed Sep 11 2019 14:16:42 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Volume Down, Command Sequence: [29,56,61008] 
+INFO - Wed Sep 11 2019 14:16:42 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Show Song Title, Command Sequence: [29,56,24] 
+INFO - Wed Sep 11 2019 14:16:42 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Next, Command Sequence: [29,56,49] 
+INFO - Wed Sep 11 2019 14:21:11 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Sequence: [56,25] 
+INFO - Wed Sep 11 2019 14:21:11 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Play/Pause, Command Sequence: [56,57] 
+INFO - Wed Sep 11 2019 14:21:11 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Mute, Command Sequence: [56,50] 
+INFO - Wed Sep 11 2019 14:21:11 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Volume Up, Command Sequence: [56,61000] 
+INFO - Wed Sep 11 2019 14:21:11 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Volume Down, Command Sequence: [56,61008] 
+INFO - Wed Sep 11 2019 14:21:11 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Show Song Title, Command Sequence: [56,24] 
+INFO - Wed Sep 11 2019 14:21:11 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Next, Command Sequence: [56,49] 
+INFO - Wed Sep 11 2019 14:23:39 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Sequence: [29,56,25] 
+INFO - Wed Sep 11 2019 14:23:39 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Play/Pause, Command Sequence: [29,56,57] 
+INFO - Wed Sep 11 2019 14:23:39 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Mute, Command Sequence: [29,56,50] 
+INFO - Wed Sep 11 2019 14:23:39 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Volume Up, Command Sequence: [29,56,61000] 
+INFO - Wed Sep 11 2019 14:23:39 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Volume Down, Command Sequence: [29,56,61008] 
+INFO - Wed Sep 11 2019 14:23:39 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Show Song Title, Command Sequence: [29,56,24] 
+INFO - Wed Sep 11 2019 14:23:39 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Next, Command Sequence: [29,56,49] 
+INFO - Wed Sep 11 2019 14:23:43 GMT-0500 (Central Daylight Time) - Main Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,25] 
+INFO - Wed Sep 11 2019 14:24:18 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=AQOhWSi6g_0&list=RDAQOhWSi6g_0&start_radio=1 
+INFO - Wed Sep 11 2019 14:24:19 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=AQOhWSi6g_0&list=RDAQOhWSi6g_0&start_radio=1 
+INFO - Wed Sep 11 2019 14:24:19 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=AQOhWSi6g_0&list=RDAQOhWSi6g_0&start_radio=1 
+INFO - Wed Sep 11 2019 14:24:19 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=AQOhWSi6g_0&list=RDAQOhWSi6g_0&start_radio=1 
+INFO - Wed Sep 11 2019 14:24:20 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=AQOhWSi6g_0&list=RDAQOhWSi6g_0&start_radio=1 
+INFO - Wed Sep 11 2019 14:24:20 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=AQOhWSi6g_0&list=RDAQOhWSi6g_0&start_radio=1 
+INFO - Wed Sep 11 2019 14:24:43 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=AQOhWSi6g_0&list=RDAQOhWSi6g_0&start_radio=1 
+INFO - Wed Sep 11 2019 14:24:43 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=AQOhWSi6g_0&list=RDAQOhWSi6g_0&start_radio=1 
+INFO - Wed Sep 11 2019 14:24:44 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=AQOhWSi6g_0&list=RDAQOhWSi6g_0&start_radio=1 
+INFO - Wed Sep 11 2019 14:28:14 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,24], Window URL: https://www.youtube.com/watch?v=Nym5stAJAt8&list=RDAQOhWSi6g_0&index=2 
+INFO - Wed Sep 11 2019 14:34:47 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61008], Window URL: https://www.youtube.com/watch?v=4GHcE0OZuNo&list=RDAQOhWSi6g_0&index=3 
+INFO - Wed Sep 11 2019 14:34:47 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61008], Window URL: https://www.youtube.com/watch?v=4GHcE0OZuNo&list=RDAQOhWSi6g_0&index=3 
+INFO - Wed Sep 11 2019 14:34:47 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61008], Window URL: https://www.youtube.com/watch?v=4GHcE0OZuNo&list=RDAQOhWSi6g_0&index=3 
+INFO - Wed Sep 11 2019 14:34:51 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61008], Window URL: https://www.youtube.com/watch?v=4GHcE0OZuNo&list=RDAQOhWSi6g_0&index=3 
+INFO - Wed Sep 11 2019 14:34:51 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61008], Window URL: https://www.youtube.com/watch?v=4GHcE0OZuNo&list=RDAQOhWSi6g_0&index=3 
+INFO - Wed Sep 11 2019 14:34:52 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61008], Window URL: https://www.youtube.com/watch?v=4GHcE0OZuNo&list=RDAQOhWSi6g_0&index=3 
+INFO - Wed Sep 11 2019 14:34:52 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61008], Window URL: https://www.youtube.com/watch?v=4GHcE0OZuNo&list=RDAQOhWSi6g_0&index=3 
+INFO - Wed Sep 11 2019 14:34:52 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61008], Window URL: https://www.youtube.com/watch?v=4GHcE0OZuNo&list=RDAQOhWSi6g_0&index=3 
+INFO - Wed Sep 11 2019 14:34:55 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=4GHcE0OZuNo&list=RDAQOhWSi6g_0&index=3 
+INFO - Wed Sep 11 2019 14:34:55 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=4GHcE0OZuNo&list=RDAQOhWSi6g_0&index=3 
+INFO - Wed Sep 11 2019 14:49:49 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=DQFWvyuFGy4&list=RDAQOhWSi6g_0&index=7 
+INFO - Wed Sep 11 2019 14:49:49 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=DQFWvyuFGy4&list=RDAQOhWSi6g_0&index=7 
+INFO - Wed Sep 11 2019 14:49:49 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=DQFWvyuFGy4&list=RDAQOhWSi6g_0&index=7 
+INFO - Wed Sep 11 2019 14:50:01 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=DQFWvyuFGy4&list=RDAQOhWSi6g_0&index=7 
+INFO - Wed Sep 11 2019 14:50:02 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61008], Window URL: https://www.youtube.com/watch?v=DQFWvyuFGy4&list=RDAQOhWSi6g_0&index=7 
+INFO - Wed Sep 11 2019 14:50:03 GMT-0500 (Central Daylight Time) - Child Shortcut Processed - Key Binding: Youtube, Sequence: [29,56,61000], Window URL: https://www.youtube.com/watch?v=DQFWvyuFGy4&list=RDAQOhWSi6g_0&index=7 
+INFO - Wed Sep 11 2019 15:01:06 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Sequence: [29,56,25] 
+INFO - Wed Sep 11 2019 15:01:06 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Play/Pause, Command Sequence: [29,42,57] 
+INFO - Wed Sep 11 2019 15:01:06 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Mute, Command Sequence: [29,42,50] 
+INFO - Wed Sep 11 2019 15:01:06 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Volume Up, Command Sequence: [29,42,61000] 
+INFO - Wed Sep 11 2019 15:01:06 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Volume Down, Command Sequence: [29,42,61008] 
+INFO - Wed Sep 11 2019 15:01:06 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Next, Command Sequence: [29,42,49] 
+INFO - Wed Sep 11 2019 15:01:06 GMT-0500 (Central Daylight Time) - Key Binding: Youtube, Command Name: Show Song Title, Command Sequence: [29,42,24] 
