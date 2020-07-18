@@ -13,7 +13,7 @@
     "electron": "^6.0.2",
     "foreman": "^2.0.0",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "mousetrap": "^1.6.3",
     "react-scripts": "0.8.5",
     "ts-node": "^8.2.0",
