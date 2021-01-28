@@ -10,7 +10,7 @@
     "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
     "@types/react-router-dom": "^4.3.3",
-    "electron": "^6.0.2",
+    "electron": "^9.4.0",
     "foreman": "^2.0.0",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
